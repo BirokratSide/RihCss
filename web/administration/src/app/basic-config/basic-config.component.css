@@ -1,0 +1,8 @@
+.outer__container {
+    width: 80%;
+    border: 1px solid black;
+    display: block;
+    padding: 3px;
+    padding-top: 10px;
+    margin: 5px;
+}

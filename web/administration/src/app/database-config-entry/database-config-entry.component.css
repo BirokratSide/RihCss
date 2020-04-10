@@ -1,0 +1,38 @@
+.availability {
+    width: 50vw;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.availability__button {
+    width: 40px;
+    height: 40px;
+    background: lightgreen;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.availability__input {
+    margin: 15px;
+    width: 15rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.update__button {
+    height: 50px;
+    border-radius: 20px;
+    font-family: sans;
+    outline: none;
+    color: white;
+    background: darkgreen;
+}
