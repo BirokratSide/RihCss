@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BasicConfigComponent } from './basic-config/basic-config.component';
-import { ServerStatusComponent } from './server-status/server-status.component';
-import { DatabaseConfigComponent } from './database-config/database-config.component';
-import { DatabaseConfigEntryComponent } from './database-config-entry/database-config-entry.component';
+import { ServerStatusComponent } from './basic-config/server-status/server-status.component';
+import { DatabaseConfigComponent } from './basic-config/database-config/database-config.component';
+import { DatabaseConfigEntryComponent } from './basic-config/database-config-entry/database-config-entry.component';
+import { CustomerParamConfigComponent } from './customer-param-config/customer-param-config.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DatabaseConfigEntryComponent } from './database-config-entry/database-c
     BasicConfigComponent,
     ServerStatusComponent,
     DatabaseConfigComponent,
-    DatabaseConfigEntryComponent
+    DatabaseConfigEntryComponent,
+    CustomerParamConfigComponent
   ],
   imports: [
     BrowserModule

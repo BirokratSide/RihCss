@@ -1,0 +1,70 @@
+.stranka__data {
+    padding: 20px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.stranka_inputs {
+    vertical-align: middle;
+    margin: auto;
+}
+
+.stranka__buttons {
+    vertical-align: middle;
+    margin: auto;
+    position: relative;
+    top: -2px;
+}
+
+.input__stranka__spec {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.button__stranka__spec {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+    margin: 6px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.stranka__spec {
+    display: flex;
+}
+
+.stranka__spec__paragraph {
+    width: 40%;
+    height: 2rem;
+    margin: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.stranka__spec__input {
+    width: 40%;
+    height: 1.8rem;
+    margin: 5px;
+}
+
+.stranka__spec__button {
+    width: 20%;
+    height: 2rem;
+    margin: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.stranka__spec__button__button {
+    width: 3em;
+    height: 3em;
+    margin: 5px;
+    border-radius: 50%;
+}
