@@ -1,0 +1,28 @@
+.record {
+    width: 35vw;
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.p {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.p__inner {
+    margin: 2px;
+}
+
+.input {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.input__inner {
+    height: 1.5em;
+    margin: 5px;
+    font-size: 0.8em;
+}
