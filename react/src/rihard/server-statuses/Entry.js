@@ -2,10 +2,30 @@ import React, { useState } from 'react';
 import styled from 'styled-components'
 
 class EntryModel {
-    constructor(name, address) {
+    constructor(name, address, status) {
         this.name = name; // string
         this.address = address; // string
+        this.status = status; // boolean
     }
+}
+
+const Entry = (props) => {
+
+    return (
+        <OuterContainer>
+            <Name>{props.model.name} online:</Name>
+            
+            <SignalButtonOuter>
+                <SignalButtonInner status={props.model.status}></SignalButtonInner>
+            </SignalButtonOuter>
+
+            <Address>address:</Address>
+
+            <AddressInput type="text" class="address__input" value={props.model.address} />
+
+        </OuterContainer>
+    );
+
 }
 
 // #region [css]
@@ -39,7 +59,7 @@ const SignalButtonOuter = styled.div`
 const SignalButtonInner = styled.div`
     width: 40px;
     height: 40px;
-    background: lightgreen;
+    background: ${props => props.status ? "lightgreen" : "red"};
     border-radius: 50%;
     border: 2px solid black;
     margin-right: 10px;
@@ -83,28 +103,6 @@ const UpdateButtonInner = styled.button`
     }
 `
 // #endregion
-
-const Entry = (props) => {
-
-    return (
-        <OuterContainer>
-            <Name>{props.model.name} online:</Name>
-            
-            <SignalButtonOuter>
-                <SignalButtonInner></SignalButtonInner>
-            </SignalButtonOuter>
-
-            <Address>address:</Address>
-
-            <AddressInput type="text" class="address__input" value={props.model.address} />
-
-            <UpdateButtonOuter>
-                <UpdateButtonInner class="update__button__inner">UPDATE</UpdateButtonInner>
-            </UpdateButtonOuter>
-        </OuterContainer>
-    );
-
-}
 
 export {
     Entry,
